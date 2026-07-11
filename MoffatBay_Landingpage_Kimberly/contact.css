@@ -1,0 +1,57 @@
+<!--
+Darreon Tolen
+Contact Us Page Prototype
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Moffat Bay Lodge</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <nav>
+        <a href="landingpage.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="reservation.html">Reservation</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="login.html" class="login-btn">Login</a>
+    </nav>
+
+    <h1>Contact Us</h1>
+
+    <p class="intro">
+        Have a question about your stay? Fill out the form below and a member of our team will contact you.
+    </p>
+
+    <div class="contact-container">
+        <form>
+            <label>Full Name:</label><br>
+            <input type="text"><br><br>
+
+            <label>Email Address:</label><br>
+            <input type="email"><br><br>
+
+            <label>Phone Number:</label><br>
+            <input type="tel"><br><br>
+
+            <label>Message:</label><br>
+            <textarea rows="5"></textarea><br><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <h2>Lodge Information</h2>
+            <p><strong>Phone:</strong> (555) 555-0123</p>
+            <p><strong>Email:</strong> info@moffatbaylodge.com</p>
+            <p><strong>Address:</strong> 100 Moffat Bay Road</p>
+            <p><strong>Hours:</strong> Monday - Sunday, 8:00 AM - 8:00 PM</p>
+        </div>
+    </div>
+
+</body>
+</html>
