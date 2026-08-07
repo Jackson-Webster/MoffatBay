@@ -1,54 +1,99 @@
-<!--
-Darreon Tolen
-About Us Page Prototype
--->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Moffat Bay Lodge</title>
-    <link rel="stylesheet" href="about.css">
-</head>
-<body>
+/* Kimberly Orozco
+   About Us Page
+*/
 
-    <nav>
-        <a href="landingpage.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="reservation.html">Reservation</a>
-        <a href="attractions.html">Attractions</a>
-        <a href="login.html" class="login-btn">Login</a>
-    </nav>
 
-    <h1>About Moffat Bay Lodge</h1>
+nav {
+    background-color: #2c3e50;
+    padding: 10px;
+}
 
-    <section class="about-box">
-        <h2>Who We Are</h2>
-        <p>
-            Moffat Bay Lodge is a peaceful getaway designed for guests who want a comfortable place to relax, enjoy nature,
-            and spend time with family or friends. Our lodge gives visitors a quiet atmosphere with beautiful views,
-            comfortable rooms, and easy access to local attractions.
-        </p>
-    </section>
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
 
-    <section class="about-box">
-        <h2>Our Mission</h2>
-        <p>
-            Our mission is to provide a simple and enjoyable lodging experience from the moment guests visit our website
-            to the moment they complete their stay. We want our online reservation system to be easy to use, clear, and reliable.
-        </p>
-    </section>
+.login-btn {
+    float: right;
+    background-color: #3498db;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 30px;
+}
 
-    <section class="about-box">
-        <h2>Why Guests Choose Us</h2>
-        <ul>
-            <li>Comfortable rooms for individuals, couples, and families</li>
-            <li>Easy online account registration and room reservations</li>
-            <li>Clear reservation confirmation after booking</li>
-            <li>Helpful information about lodge amenities and local attractions</li>
-        </ul>
-    </section>
+.about-box {
+    background-color: white;
+    width: 75%;
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
 
-</body>
-</html>
+.about-box h2 {
+    color: #2c3e50;
+}
+
+.about-box p,
+.about-box li {
+    line-height: 1.6;
+}
+
+.about-image {
+    display: block;
+    width: 350px;
+    max-width: 100%;
+    margin: 20px auto 0;
+    border-radius: 8px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 40px;
+    padding: 30px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px 40px;
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.login-message {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #d6d6d6;
+}
