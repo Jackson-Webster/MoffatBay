@@ -1,0 +1,51 @@
+<!--
+Kimberly Orozco
+Landing Page Prototype
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moffat Bay Lodge</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+
+<!-- NAV BAR! -->
+<nav>
+    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('about') }}">About Us</a>
+    <a href="{{ url_for('contact') }}">Contact Us</a>
+    <a href="{{ url_for('reservation') }}">Reservation</a>
+    <a href="{{ url_for('lookup') }}">Reservation Lookup</a>
+    <a href="{{ url_for('attractions') }}">Attractions</a>
+    <a href="{{ url_for('login') }}" class="login-btn">Login</a>
+</nav>
+
+<!-- Cool lodge Image -->
+<div class="image-container">
+    <img src="{{ url_for('static', filename='images/lodgelanding1.png') }}">
+
+    <div class="image-text">
+        <h1>Welcome to Moffat Bay Lodge!</h1>
+        <p>Enjoy your stay at Moffat Bay Lodge!</p>
+    </div>
+
+</div>
+
+<!-- Let me know how you guys feel about this -->
+
+<h2>Why Stay with Us?</h2>
+
+<!-- Should these lead to their own page later on? Or have a picture and a small description? Let me know :D -->
+<ul>
+    <li>Comfortable rooms!</li>
+    <li>Beautiful views!</li>
+    <li>Fun Local Attractions!</li>
+    <li>Easy online bookings!</li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!--
+Jackson Webster
+Reservation Lookup Prototype
+Prototype page allowing users to search for reservation information.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Lookup</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About Us</a>
+        <a href="{{ url_for('contact') }}">Contact Us</a>
+        <a href="{{ url_for('reservation') }}">Reservation</a>
+        <a href="{{ url_for('lookup') }}">Reservation Lookup</a>
+        <a href="{{ url_for('attractions') }}">Attractions</a>
+        <a href="{{ url_for('login') }}" class="login-btn">Login</a>
+    </nav>
+
+    <h1>Reservation Lookup</h1>
+
+    <!-- Search Form -->
+    <form action="/lookup" method="POST">
+
+        <label for="reservationID">Reservation ID:</label><br>
+        <input
+            type="text"
+            id="reservationID"
+            name="reservationID"
+            required>
+
+        <br><br>
+
+        <button type="submit">Search</button>
+
+    </form>
+
+    <hr>
+
+    {% if reservation %}
+
+    <h2>Reservation Results</h2>
+
+    <p><strong>Reservation ID:</strong> {{ reservation['reservationID'] }}</p>
+    <p><strong>Customer ID:</strong> {{ reservation['customerID'] }}</p>
+    <p><strong>Room Type:</strong> {{ reservation['roomType'] }}</p>
+    <p><strong>Guests:</strong> {{ reservation['guests'] }}</p>
+    <p><strong>Check-In:</strong> {{ reservation['checkInDate'] }}</p>
+    <p><strong>Check-Out:</strong> {{ reservation['checkOutDate'] }}</p>
+    <p><strong>Special Requests:</strong> {{ reservation['specialRequests'] }}</p>
+
+    {% elif message %}
+
+    <p>{{ message }}</p>
+
+    {% endif %}
+
+</body>
+</html>

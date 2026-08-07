@@ -1,0 +1,59 @@
+<!--
+Jackson Webster
+Attractions Page Prototype
+Prototype page showing attractions available near Moffat Bay Lodge.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About Us</a>
+        <a href="{{ url_for('contact') }}">Contact Us</a>
+        <a href="{{ url_for('reservation') }}">Reservation</a>
+        <a href="{{ url_for('lookup') }}">Reservation Lookup</a>
+        <a href="{{ url_for('attractions') }}">Attractions</a>
+        <a href="{{ url_for('login') }}" class="login-btn">Login</a>
+    </nav>
+
+    <h1>Local Attractions</h1>
+
+    <!-- Hiking Section -->
+    <section>
+        <h2>Hiking</h2>
+        <img src="{{ url_for('static', filename='images/hiking.jpg') }}">
+        <p>Explore scenic hiking trails throughout the island.</p>
+    </section>
+
+    <!-- Kayaking Section -->
+    <section>
+        <h2>Kayaking</h2>
+        <img src="{{ url_for('static', filename='images/kayaking.jpg') }}">
+        <p>Enjoy guided and self-guided kayaking adventures.</p>
+    </section>
+
+    <!-- Whale Watching Section -->
+    <section>
+        <h2>Whale Watching</h2>
+        <img src="{{ url_for('static', filename='images/Whale.jpg') }}">
+        <p>Experience whale watching tours around the San Juan Islands.</p>
+    </section>
+
+    <!-- Scuba Diving Section -->
+    <section>
+        <h2>Scuba Diving</h2>
+        <img src="{{ url_for('static', filename='images/Scuba.jpg') }}">
+        <p>Discover underwater wildlife and beautiful ocean scenery.</p>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!--
+Darreon Tolen
+About Us Page Prototype
+Updated: 2026-07-24, Kimberly Orozco
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Moffat Bay Lodge</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+</head>
+<body>
+
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About Us</a>
+        <a href="{{ url_for('contact') }}">Contact Us</a>
+        <a href="{{ url_for('reservation') }}">Reservation</a>
+        <a href="{{ url_for('lookup') }}">Reservation Lookup</a>
+        <a href="{{ url_for('attractions') }}">Attractions</a>
+        <a href="{{ url_for('login') }}" class="login-btn">Login</a>
+    </nav>
+
+    <h1>About Moffat Bay Lodge</h1>
+
+    <section class="about-box">
+        <h2>Who We Are</h2>
+        <img src="{{ url_for('static', filename='images/lodgeAbout.png') }}">
+        <p>
+            Moffat Bay Lodge is a peaceful getaway designed for guests who want a comfortable place to relax, enjoy nature,
+            and spend time with family or friends. Our lodge gives visitors a quiet atmosphere with beautiful views,
+            comfortable rooms, and easy access to local attractions.
+        </p>
+    </section>
+
+    <section class="about-box">
+        <h2>Our Mission</h2>
+        <p>
+            Our mission is to provide a simple and enjoyable lodging experience from the moment guests visit our website
+            to the moment they complete their stay. We want our online reservation system to be easy to use, clear, and reliable.
+        </p>
+    </section>
+
+    <section class="about-box">
+        <h2>Why Guests Choose Us</h2>
+        <img src="{{ url_for('static', filename='images/lodgeGuests.png') }}">
+        <ul>
+            <li>Comfortable rooms for individuals, couples, and families</li>
+            <li>Easy online account registration and room reservations</li>
+            <li>Clear reservation confirmation after booking</li>
+            <li>Helpful information about lodge amenities and local attractions</li>
+        </ul>
+    </section>
+
+</body>
+
+<footer>
+
+    <!-- Contact thingie -->
+    <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>(123) 456-7077</p>
+        <p>123 Moffat Bay Rd.<br>
+           Joviedsa Island, WA</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section">
+        <h3>Quick Links!</h3>
+
+        <div class="footer-links">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}">About Us</a>
+            <a href="{{ url_for('reservation') }}">Make a Reservation</a>
+            <a href="{{ url_for('attractions') }}">Attractions</a>
+        </div>
+
+        <p class="login-message">
+            *Must be logged in to create a reservation.
+        </p>
+
+    </div>
+
+</footer>
+</html>

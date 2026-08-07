@@ -1,0 +1,51 @@
+<!--
+Darreon Tolen
+Login Page Prototype
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Moffat Bay Lodge</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <nav>
+        <a href="landingpage.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="reservation.html">Reservation</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="login.html" class="login-btn">Login</a>
+    </nav>
+
+    <h1>Customer Login</h1>
+
+    <p>
+        Log in to your account to make a reservation or view your reservation details.
+    </p>
+
+    <form>
+        <label>Email Address:</label><br>
+        <input type="email"><br><br>
+
+        <label>Password:</label><br>
+        <input type="password"><br><br>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <p>
+        Do not have an account yet?
+        <a href="registration.html">Create an Account</a>
+    </p>
+
+    <p>
+        Need to find a reservation?
+        <a href="reservationlookup.html">Look Up Reservation</a>
+    </p>
+
+</body>
+</html>
